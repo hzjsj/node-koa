@@ -39,3 +39,19 @@ npm run serve
 npm install koa-router -S
 npm install require-directory -S
 ```
+
+### 三、Koa2 使用 ejs 模板引擎
+
+安装 koa-views 和 ejs
+
+```
+npm install koa-views  -S
+npm install  ejs -S
+```
+
+配置模板引擎时，放在 router 引入之前
+
+```
+const views = require('koa-views')
+app.use(views('./views',{ map :{ html:'ejs' } }))
+```
