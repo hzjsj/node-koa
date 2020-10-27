@@ -55,3 +55,17 @@ npm install  ejs -S
 const views = require('koa-views')
 app.use(views('./views',{ map :{ html:'ejs' } }))
 ```
+
+### 四、表单提交和数据处理
+
+使用 cdn 引入 axios
+
+```
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+```
+
+安装 koa-bodyparser 处理数据
+
+```
+npm install koa-bodyparser -S
+```

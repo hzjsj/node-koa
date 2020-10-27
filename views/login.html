@@ -8,7 +8,7 @@
 </head>
 <body>
     <fieldset class="layui-elem-field" style="margin-top: 20px;margin-left:20px;width: 600px;">
-        <legend>注册</legend>
+        <legend>登入</legend>
         <div class="layui-field-box">
         <form class="layui-form" action="" style="margin-top: 20px;">
             <div class="layui-form-item">
@@ -42,7 +42,7 @@
             
             //监听提交
             form.on('submit(formDemo)', function(data){
-                
+
             //发送 post 请求
             axios.post('/register', data.field)
             .then(function (response) {
