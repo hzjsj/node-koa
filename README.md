@@ -30,3 +30,12 @@ npm install nodemon -S
 ```
 npm run serve
 ```
+
+### 二、路由自动化注册
+
+安装 koa-router 和 require-directory
+
+```
+npm install koa-router -S
+npm install require-directory -S
+```
