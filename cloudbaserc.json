@@ -1,0 +1,15 @@
+{
+  "envId": "files-fd033",
+  "framework": {
+    "plugins": {
+      "server": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "entry": "index.js",
+          "path": "/",
+          "name": "node-koa"
+        }
+      }
+    }
+  }
+}

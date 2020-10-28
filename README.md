@@ -69,3 +69,33 @@ app.use(views('./views',{ map :{ html:'ejs' } }))
 ```
 npm install koa-bodyparser -S
 ```
+
+### 五、添加配置文件，部署到云开发
+
+新建 cloudbaserc.json 文件
+
+```
+{
+  "envId": "",
+  "framework": {
+    "plugins": {
+      "server": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "entry": "index.js",
+          "path": "/",
+          "name": "node-koa"
+        }
+      }
+    }
+  }
+}
+
+```
+
+安装 cloudbase framework 并部署到腾讯云云开发
+
+```
+npm install -g @cloudbase/cli@latest
+cloudbase framework deploy
+```
